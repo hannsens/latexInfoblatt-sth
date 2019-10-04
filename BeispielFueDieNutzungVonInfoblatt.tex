@@ -1,0 +1,87 @@
+\documentclass{infoblatt-sth} 
+
+% Statische Inhalte.
+\ihead{\thetitle}
+%\chead{Mitte oben}
+\ohead{
+	\includegraphics[height=1cm]{logo}	
+}
+
+
+% Unterschiedliche Inhalte für gerade/ungerade.
+\ifoot*{\href{https://creativecommons.org/licenses/by/4.0/}{\ccby CC BY 4.0}, Hannes Stein }
+\cfoot*{\today}
+\ofoot*{\pagemark}
+\renewcommand*{\pagemark}{{\usekomafont{pagenumber}{Seite \thepage\ von \pageref*{LastPage}}}}
+
+
+%\usepackage{showframe} % for debug information
+\usepackage{titling}
+\pretitle{
+	\begin{tabular}[t]{p{11cm} p{5cm}}
+		\bfseries
+		\LARGE
+		\selectfont
+	}
+	\posttitle{
+	
+		\raisebox{\ht\strutbox-\height}{			
+			\href{https://github.com/hannsens/SayHelloToSpringBoot/raw/master/latex/01_FirstProject.pdf}{
+			\includegraphics[width=1cm]{image/qr}		}
+		}
+	
+		& 	\raisebox{\ht\strutbox-\height}{			
+	\includegraphics[width=4.5cm]{logo}
+		}
+	\end{tabular}
+
+%\href{https://github.com/hannsens/SayHelloToSpringBoot/raw/master/latex/01_FirstProject.pdf}{https://github.com/hannsens/SayHelloToSpringBoot/raw/master/latex/01\_FirstProject.pdf}
+}
+%\preauthor{}\postauthor{}
+\predate{}\date{}\postdate{}
+
+\title{Java Collections}
+%\author{Hannes Stein}
+
+
+\begin{document}
+	\setlength{\droptitle}{-40pt} % lower the title
+	\maketitle
+	%	\begin{abstract}
+	%	Wie interagiert ein (Software-)System mit dem Benutzer?
+	%	\end{abstract}
+	
+	
+	
+	%\pagenumbering{roman}\setcounter{page}{1}
+	% \tableofcontents
+	% \listoffigures
+	% \listoftables
+	
+	
+	
+	\pagenumbering{arabic}\setcounter{page}{1}
+	
+
+
+
+\begin{abstract}
+ Objektsammlungen
+\end{abstract}
+\section{Überblick}
+
+\begin{figure}[htbp] 
+	\centering
+	\includegraphics[width=17cm]{Collection}
+	\caption{Logo}
+	\label{fig:Das Collections-Framework}
+\end{figure}
+
+\begin{figure}[htbp] 
+	\centering
+	\includegraphics[width=18cm]{Map}
+	\caption{Logo}
+	\label{fig:Maps}
+\end{figure}
+
+\end{document}
